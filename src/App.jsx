@@ -43,7 +43,8 @@ function App() {
             <span>OpenClaw</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
-            <a href="#features" className="hover:text-white transition-colors">Features</a>
+            <a href="#features" className="hover:text-white transition-colors">Fonctionnalités</a>
+            <a href="#how-it-works" className="hover:text-white transition-colors">Comment ça marche</a>
             <a href="https://github.com/openclaw/openclaw" className="hover:text-white transition-colors">Docs</a>
           </div>
           <a 
@@ -68,26 +69,26 @@ function App() {
         >
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-400 mb-8">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            v1.0.0 Now Available
+            v1.0.0 Disponible
           </motion.div>
           
           <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-zinc-500">
-            Your Sovereign <br />
-            <span className="text-red-500">AI Assistant</span>
+            Votre Assistant IA <br />
+            <span className="text-red-500">Souverain</span>
           </motion.h1>
           
           <motion.p variants={fadeInUp} className="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            OpenClaw runs locally, respects your privacy, and connects to your digital life. 
-            Automate tasks, manage code, and explore the web—without leaving your terminal.
+            OpenClaw fonctionne localement, respecte votre vie privée et se connecte à votre vie numérique.
+            Automatisez vos tâches, gérez votre code et explorez le web—sans quitter votre terminal.
           </motion.p>
           
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://github.com/openclaw/openclaw" className="px-8 py-4 bg-red-600 hover:bg-red-500 text-white rounded-full font-bold flex items-center justify-center gap-2 transition-all hover:scale-105">
-              Get Started
+              Commencer
               <ChevronRight className="w-4 h-4" />
             </a>
             <a href="#features" className="px-8 py-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white rounded-full font-bold transition-all">
-              Learn More
+              En savoir plus
             </a>
           </motion.div>
 
@@ -113,19 +114,19 @@ function App() {
               <div className="text-zinc-300">
                 🦞 OpenClaw v1.0.0<br/>
                 ------------------<br/>
-                ✅ Agent: Online (Gemini Pro)<br/>
-                ✅ Gateway: Connected<br/>
-                ✅ Skills: 12 Loaded<br/>
+                ✅ Agent: En ligne (Gemini Pro)<br/>
+                ✅ Gateway: Connecté<br/>
+                ✅ Skills: 12 Chargés<br/>
                 <br/>
-                Ready for commands.
+                Prêt pour vos commandes.
               </div>
               <div className="flex gap-2">
                 <span className="text-green-400">➜</span>
                 <span className="text-blue-400">~</span>
-                <span className="text-zinc-400">create a new react app</span>
+                <span className="text-zinc-400">crée une application react</span>
               </div>
               <div className="text-zinc-500 animate-pulse">
-                Thinking...
+                Réflexion en cours...
               </div>
             </div>
           </motion.div>
@@ -136,40 +137,40 @@ function App() {
       <section id="features" className="py-24 px-6 bg-zinc-950/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful Capabilities</h2>
-            <p className="text-zinc-400">Everything you need to automate your workflow.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Capacités Puissantes</h2>
+            <p className="text-zinc-400">Tout ce dont vous avez besoin pour automatiser votre workflow.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FeatureCard 
               icon={Terminal}
-              title="Terminal Native"
-              description="Lives in your CLI. Executes commands, manages files, and interacts with your system securely."
+              title="Natif Terminal"
+              description="Vit dans votre CLI. Exécute des commandes, gère les fichiers et interagit avec votre système en toute sécurité."
             />
             <FeatureCard 
               icon={Cpu}
-              title="LLM Agnostic"
-              description="Switch between Gemini, Claude, GPT-4, or local models via Ollama effortlessly."
+              title="Agnostique LLM"
+              description="Passez de Gemini à Claude, GPT-4, ou des modèles locaux via Ollama sans effort."
             />
             <FeatureCard 
               icon={Code}
-              title="Coding Agent"
-              description="Reads, writes, and refactors code. Can generate entire projects and debug errors autonomously."
+              title="Agent de Codage"
+              description="Lit, écrit et refactorise le code. Peut générer des projets entiers et débugger de manière autonome."
             />
             <FeatureCard 
               icon={Globe}
-              title="Web Access"
-              description="Browses the web to fetch documentation, research topics, and summarize content in real-time."
+              title="Accès Web"
+              description="Navigue sur le web pour récupérer de la documentation, faire des recherches et résumer du contenu en temps réel."
             />
             <FeatureCard 
               icon={Shield}
-              title="Secure & Private"
-              description="Sandboxed execution environment. You control the permissions. Your data never leaves your machine unnecessarily."
+              title="Sécurisé & Privé"
+              description="Environnement d'exécution isolé (sandbox). Vous contrôlez les permissions. Vos données ne quittent pas votre machine."
             />
             <FeatureCard 
               icon={MessageSquare}
-              title="Multi-Channel"
-              description="Chat with OpenClaw via Telegram, Discord, or WhatsApp when you're away from your terminal."
+              title="Multi-Canal"
+              description="Discutez avec OpenClaw via Telegram, Discord ou WhatsApp lorsque vous êtes loin de votre terminal."
             />
           </div>
         </div>
@@ -179,16 +180,16 @@ function App() {
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-red-900/20 to-zinc-900 border border-zinc-800 rounded-3xl p-12 text-center relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to upgrade your workflow?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Prêt à améliorer votre workflow ?</h2>
             <p className="text-zinc-400 mb-8 max-w-xl mx-auto">
-              Join thousands of developers using OpenClaw to automate the boring stuff and focus on building.
+              Rejoignez des milliers de développeurs qui utilisent OpenClaw pour automatiser les tâches répétitives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://github.com/openclaw/openclaw" className="px-8 py-4 bg-white text-black hover:bg-zinc-200 rounded-full font-bold transition-colors">
-                Install Now
+                Installer Maintenant
               </a>
               <a href="https://discord.gg/openclaw" className="px-8 py-4 bg-transparent border border-zinc-700 hover:bg-zinc-800 text-white rounded-full font-bold transition-colors">
-                Join Community
+                Rejoindre la Communauté
               </a>
             </div>
           </div>
@@ -203,13 +204,13 @@ function App() {
             <span>OpenClaw</span>
           </div>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
+            <a href="#" className="hover:text-white transition-colors">Confidentialité</a>
+            <a href="#" className="hover:text-white transition-colors">Conditions</a>
             <a href="https://github.com/openclaw/openclaw" className="hover:text-white transition-colors">GitHub</a>
             <a href="#" className="hover:text-white transition-colors">Twitter</a>
           </div>
           <div>
-            © 2026 OpenClaw Project. All rights reserved.
+            © 2026 Projet OpenClaw. Tous droits réservés.
           </div>
         </div>
       </footer>
